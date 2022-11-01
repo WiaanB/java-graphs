@@ -30,13 +30,13 @@ public class Vertex {
         String message = "";
 
         if (this.edges.size() == 0) {
-            System.out.println(this.data  + " -- >");
+            System.out.println(this.data  + " --> ");
             return;
         }
 
         for (int i = 0; i < this.edges.size(); i++) {
             if (i == 0) {
-                message += this.edges.get(i).getWeight() + ")";
+                message += this.edges.get(i).getStart().data + " --> ";
             }
 
             message += this.edges.get(i).getEnd().data;
